@@ -1,0 +1,119 @@
+*{ box-sizing: border-box;}
+/* the main sliding div */
+.slideShow{
+    max-width: 1025px;
+    position: relative;
+    margin: auto;
+}
+/* hiding the images by default */
+.mainSlides{
+    display: none;
+    
+}
+.text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: wheat;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* animations for the texts */
+.fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+/* specific styling for each texts */
+#intro1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#intro2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+    color: rgb(100, 134, 31);
+}
+#intro3{font-size: 100%;}
+#intro4{list-style-type: square;}
+#intro5{color: orangered; font-weight: 600;}
+#intro6{color: orangered;font-weight: 600;}
+#intro7{color: rgb(139, 4, 4);}
+
+.dots{
+    margin: 1px,1px;
+    width: 10px ;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block; 
+    transition-property: background-color;
+    transition-duration: 0.6s;
+    transition-timing-function: ease; 
+}
+.active{
+    background-color:gray;
+}
+/* slideshow animation styling */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{ 
+    0%{opacity: 0.4;}
+100%{opacity: 1;}}
+
+@keyframes fade{ 
+    0%{opacity: 0.4;}
+100%{opacity: 1;}}
+/* removing default link styles */
+ a{text-decoration: none;}
+ 
