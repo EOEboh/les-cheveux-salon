@@ -1,4 +1,5 @@
 *{ box-sizing: border-box;}
+body{overflow-x: hidden;}
 
 .sidenav{
     height: 100%;
@@ -30,7 +31,9 @@
 #logo{transition: margin-left 0.5s;}
 
 /* media query for larger screens */
-@media 
+@media screen and (min-width:7){
+
+}
 
 /* the main sliding div */
 .slideShow{
@@ -44,6 +47,7 @@
     
 }
 .text{
+  display: inline;
     position: absolute;
     bottom: 0;
     left: 0;
