@@ -1,6 +1,5 @@
 *{ box-sizing: border-box;}
 body{
-  
   overflow-x: hidden;}
 
 .sidenav{
@@ -42,7 +41,7 @@ body{
       left: 20px;
       top: 70px;
       margin-top: 10px;
-      padding: 1rem;
+      
     }
 }
 
@@ -65,6 +64,13 @@ body{
     color: purple;
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+#bookBtn1{border: red solid 2px;}
+#bookBtn1 a{color: black;}
+#bookBtn{
+  background-color: black;
+  padding: 0.7rem;
+  border-radius: 2rem;
 }
 /* animations for the texts */
 .fade-in {
@@ -165,6 +171,8 @@ body{
 100%{opacity: 1;}}
 /* removing default link styles */
  a{text-decoration: none;}
+ a:link{color: #ffffff;}
+ a:visited{color: #ffffff;}
 
 
  .column{
@@ -179,17 +187,30 @@ body{
  }
 .caption{
   text-align: center; 
+  font-family: 'Roboto400', sans-serif;
 }
 .row{padding: 2rem;}
+
+/* styling the footer */
 .footer{
-  background-color: rgb(136, 135, 135);
+  background-color: rgb(136, 135, 135);/* fallback */
   background-image: url(./img/footer.jpg);
-  width: 100%;
-  margin: auto;
-  color: #ffffff;
+  width: 100%; 
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+  color: #ffffff; 
+  font-family: 'Roboto', sans-serif;
+  
 }
-
-
+.grid-item{
+  text-align: center; 
+  padding: 1rem;
+  margin: auto;
+}
+.grid-item li{
+  padding: 0.5rem;
+}
 
 
 .footerText{
@@ -201,6 +222,7 @@ body{
   height: 70%;
   width: 100%;
   padding: 0;
+  text-align: center;
   margin: auto;
   color:white;
   font-weight: 600;
