@@ -96,3 +96,7 @@ hr{
 #aboutText{
     font-family: 'Roboto400', sans-serif;
 }
+/* Specials Page */
+#specials{ font-family: 'Roboto', sans-serif;}
+#specialsBtn{padding: 1rem; 
+border-radius: 0.5rem;}
