@@ -40,3 +40,15 @@ function showSlides(){
     setTimeout(showSlides, 5000);
 
 }
+// Google maps for the location
+// Initialize and add the map
+function initMap() {
+    
+    var lagos = {lat: 6.489252, lng:3.358009};
+    
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 18, center: lagos});
+
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+
