@@ -63,6 +63,7 @@ body{
 hr{
     background-color:gray;
 }
+/* Location Page */
 #location{
     font-family: 'Roboto',sans-serif ;
 }
@@ -86,3 +87,12 @@ hr{
  a{text-decoration: none;}
  a:link{color: #ffffff;}
  a:visited{color: #ffffff;}
+
+/* About Page */
+#about{
+    font-family: 'Roboto', sans-serif;
+    margin: 0.5rem;
+}
+#aboutText{
+    font-family: 'Roboto400', sans-serif;
+}
