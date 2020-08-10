@@ -107,3 +107,77 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
     font-size: 250%;
     font-family: 'Roboto', sans-serif;
 }
+
+/* Catalogue Page */
+* {box-sizing:border-box}
+.slideShow1{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    
+}
+.catalogueSlide{
+    display: none;
+    text-align: center;
+}
+.prev,
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 7px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.7s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+}
+.prev:hover,
+.next:hover{
+    background-color: #ffffff;
+}
+.next{
+    right: 0;
+
+}
+.dot2{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    background-color: gray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.7s ease;
+    
+}
+.active,
+.dot2:hover{
+    background-color: black;
+}
+/* catalogue slide animation */
+.fade{
+    -webkit-animation: fade 1.5 ease-in-out;
+    -moz-animation: fade 1.5 ease-in-out;
+    animation: fade 1.5s ease-in-out;
+    
+}
+@-webkit-keyframes fade{
+    0%{opacity: 0.4;}
+    100%{opacity: 1;}
+}
+@-moz-keyframes fade{
+    0%{opacity: 0.4;}
+    100%{opacity: 1;}
+}
+@keyframes fade{
+    0%{opacity: 0.4;}
+    100%{opacity: 1;}
+}
+p{font-family:'Roboto', sans-serif;}
+
+
+
