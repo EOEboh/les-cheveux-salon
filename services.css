@@ -80,8 +80,10 @@ hr{
     display: grid;
     grid-template-columns: auto;
     row-gap: 20px;
-    color: #ffffff; 
-    
+    color: #ffffff;  
+  }
+  .footer .grid-item li{
+      padding: 0.5rem;
   }
   /* removing default link styles */
  a{text-decoration: none;}
