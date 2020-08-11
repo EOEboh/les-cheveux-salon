@@ -263,4 +263,11 @@ font-size: 400%;
     display: none;
   }
   
+#logoPic{
+  width: 70%;
+}
+#logo{
+  text-align: center;
+}
+  
 }
