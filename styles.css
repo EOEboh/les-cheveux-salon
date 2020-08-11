@@ -185,11 +185,14 @@ body{
    overflow-x: hidden;
    
  }
+ .caption a{color: rgb(136, 135, 135);}
 .caption{
   text-align: center; 
   font-family: 'Roboto400', sans-serif;
 }
 .row{padding: 2rem;}
+/* larger screen layout */
+@media screen and (max-width:769px){.row2{display: none;}}
 
 /* styling the footer */
 .footer{
@@ -236,7 +239,7 @@ text-align: center;
 font-size: 400%;
 }
 
-/* FOR LARGER SCREENS > 1030PX*/
+/* For larger screens > 770px*/
 @media screen and (min-width:770px){
   .sidenav{
     display: inline;
@@ -269,5 +272,26 @@ font-size: 400%;
 #logo{
   text-align: center;
 }
+.row{display: none;}
+.row2{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: no-wrap;
   
 }
+.column2 img{
+  align-items: center;
+  width: 100%;
+}
+
+.caption2{
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Roboto', sans-serif;
+}
+.caption2 a{
+  color: rgb(136, 135, 135);
+}
+}
+
+
