@@ -236,3 +236,31 @@ text-align: center;
 font-size: 400%;
 }
 
+/* FOR LARGER SCREENS > 1030PX*/
+@media screen and (min-width:770px){
+  .sidenav{
+    display: inline;
+    position: relative;
+    
+  }
+  .sidenav a{
+    display: block;
+    float: left;
+    color: black;
+    
+  }
+  .sidenav a:hover{
+    background-color: black;
+    font-size: 100%;
+  }
+  .sidenav .closeBtn{
+    position: relative;
+  }
+  .sidenav .closeBtn{
+    display: none;
+  }
+  #openBtn{
+    display: none;
+  }
+  
+}
