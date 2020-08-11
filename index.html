@@ -4,45 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Cheveux Hair Salon</title>
+    <!-- CSS file -->
     <link rel="stylesheet" href="styles.css">
+    <!-- fontawesome -->
     <script src="https://use.fontawesome.com/45e01bcc2b.js"></script>
+    <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
       
     <nav>
+        <!-- closing nav button -->
     <div id="sideNav" class="sidenav">
         <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
-        <a href="#">Services</a>
-        <a href="#">Location</a>
-        <a href="#">Book Online</a>
-        <a href="#">Specials</a> 
-        <a href="#">About Us</a>
-        <a href="#">Hair Tips</a>
-        <a href="#">Gift Cards</a>
+        <a href="./services.html" target="_blank">Services</a>
+        <a href="./location.html" target="_blank">Location</a>
+        <a href="./bookonline.html" target="_blank">Book Online</a>
+        <a href="./specials.html" target="_blank">Specials</a> 
+        <a href="./about.html" target="_blank">About Us</a>
+        <a href="./hairtips.html" target="_blank">Hair Tips</a>
+        <a href="./giftcard.html" target="_blank">Gift Cards</a>
     </div>
     <div id="logo">
-        <img src="./img/logo.png"  id="logoPic" alt="Les Cheveux">
+        <a href="./index.html"> <img src="./img/logo.png"  id="logoPic" alt="Les Cheveux"></a>
         <span onclick="openNav()" style="font-size:30px; cursor: pointer;" id="openBtn">&#9776;</span>
     </div>
     </nav>  
 
 </header>
    <div class="slideShow">
-       <div class="mainSlides">
+       <div class="mainSlides fade">
            <img src="./img/main.jpg" style="width: 100%;" /> 
            <div class="text fade-in"><span id="intro1">WE ARE OPEN</span> <br/>AND READY TO <br/> <span id="intro2">TAKE CARE OF YOUR HAIR</span> 
              <br/>
              <br/>
              <br/>
              OPENING HOURS:<br/>Monday-Saturday<br/> 9am - 8pm  
-             <button id="bookBtn1"><a href="#">Book Now</a></button></div>
+             <button id="bookBtn1"><a href="./bookonline.html" target="_blank">Book Now</a></button></div>
        </div>
        <div class="mainSlides fade">
            <img src="./img/five.jpg" style="width: 100%;" />
            <div class="text fade-in"><span id="intro3">We got you covered<br/> on all hair styles and <br/>beautifying techniques</span><br/>
-            <button id="bookBtn"><a href="#">Check Our Catalogue</a></button>
+            <button id="bookBtn"><a href="./catalogue.html" target="_blank">Check Our Catalogue</a></button>
         </div>
        </div>
        <div class="mainSlides fade">
@@ -57,7 +61,7 @@
                <li>Manicure/Pedicure</li>
            </ul>
         
-        <button id="bookBtn"><a href="#">Look Good Today</a></button>
+        <button id="bookBtn"><a href="./catalogue.html" target="_blank">Look Good Today</a></button>
         </div>
        </div>
        <div class="mainSlides fade">
@@ -71,13 +75,14 @@
            <img src="./img/two.jpg" style="width: 100%;" />
            <div class="text fade-in"><span id="intro6">....OR MAN </span>
                <br />
-               <span id="intro7">We got you</span>
+               <span id="intro7">We got you!</span>
                <br/>
-               <button id="bookBtn"><a href="#">Men Care</a></button>
+               <button id="bookBtn"><a href="./hairtips.html">Men Care</a></button>
            </div>
        </div>
     
    </div> 
+   <!-- slideshow dots -->
 <div class="mainDots" style="text-align: center;">
       <span class="dots"></span>
       <span class="dots"></span>
@@ -112,7 +117,7 @@
     <div class="footer">
 
         <div class="grid-item">
-      <p>Les Chaveux Salon</p>  
+      <p style="color: rgb(207, 177, 138);">Les Chaveux Salon</p>  
       <br/>
       230 Bode Thomas Road<br/>
       Surulere,Lagos,Nigeria <br/>
@@ -126,7 +131,7 @@
     
         <div class="grid-item">
       <ul style="list-style-type: none;">
-        <b>HOURS</b>
+        <p style="color: rgb(207, 177, 138);"><b>HOURS</b></p>
           <li>Monday 9-8</li>
           <li>Tuesday 9-8</li>
           <li>Wednesday 9-8</li>
@@ -139,21 +144,22 @@
 
         <div class="grid-item">
         <ul style="list-style-type: none;">
-            <b>EXPLORE</b>
+           <p style="color: rgb(207, 177, 138);"> <b>EXPLORE</b></p>
             <li><a href="./services.html" target="_blank"> Services</a></li>
-            <li><a href="#" target="_blank"> About Us</a></li>
-            <li><a href="#" target="_blank"> Specials</a></li>
-            <li><a href="#" target="_blank"> Book Online</a></li>
-            <li><a href="#" target="_blank"> Hair Tips</a></li>
+            <li><a href="./about.html" target="_blank"> About Us</a></li>
+            <li><a href="./specials.html" target="_blank"> Specials</a></li>
+            <li><a href="./bookonline.html" target="_blank"> Book Online</a></li>
+            <li><a href="./hairtips.html" target="_blank"> Hair Tips</a></li>
         </ul>
         </div>
       
     </div>
     </footer>
     <aside>
+        <!-- bottom text -->
     <div class="aveda">
         <div class="footerText">
-            <p>LES CHEVEUX SALON IS PROUD TO BE AN AVEDA LIFESTYLE SALON.<br/><span id="childAveda"> AVEDA</span></p>
+            <p>LES CHEVEUX SALON IS PROUD TO BE AN AVEDA LIFESTYLE SALON.<br/><br/><span id="childAveda"> <a href="#"> <img src="./img/aveda.png" alt=""></a></span></p>
         </div>
     </div>
 </aside>
