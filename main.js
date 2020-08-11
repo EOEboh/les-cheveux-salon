@@ -52,3 +52,11 @@ function initMap() {
     var marker = new google.maps.Marker({position: uluru, map: map});
   }
 
+//   generating the random code
+  function newCode(){
+    let theCode = [1224, 5673, 0342,2373,7373,7436,2434, 4536, 5462];
+      let randomCode = Math.floor(Math.random() * (theCode.length))
+      document.getElementById('code').innerHTML = theCode[randomCode]
+
+  }
+
