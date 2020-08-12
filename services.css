@@ -55,11 +55,25 @@ body{
 }
 .grid-item{
     text-align: center; 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto400', sans-serif;
     padding: 1rem; 
     margin: auto;  
 }
 .grid-item ul {list-style-type: none;}
+/* For the first grid item in services page */
+.grid-item1{
+  text-align: center; 
+  font-family: 'Roboto400', sans-serif;
+  padding: 1rem; 
+  margin: auto; 
+    }
+.grid-item1 ul {list-style-type: none;
+  font-family: 'Roboto400', sans-serif;
+}
+.grid-item p{ font-family: 'Roboto400', sans-serif;}
+
+
+  b{font-family: 'Roboto', sans-serif;}
 hr{
     background-color:rgb(95, 90, 90);
 }
@@ -214,6 +228,15 @@ p{font-family:'Roboto', sans-serif;}
   #logo{
     text-align: center;
   }
+  .grid-item1{
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem; 
+    margin: auto; 
+      }
+      .grid-item1 ul {
+        list-style-type: none;
+      }
   /* footer for larger screens */
 .footer{
     display: grid;
@@ -239,6 +262,9 @@ p{font-family:'Roboto', sans-serif;}
         padding: 0.5rem;
           
       }
+      .grid-item1{
+        grid-column: span 4;
+      }  
       
   }
 
