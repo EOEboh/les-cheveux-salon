@@ -47,7 +47,6 @@ body{
 
 /* the main sliding div */
 .slideShow{
-    max-width: 1025px;
     position: relative;
     margin: auto;
 }
@@ -203,7 +202,7 @@ body{
   grid-template-columns: auto;
   row-gap: 20px;
   color: #ffffff; 
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto400', sans-serif;
   
 }
 .grid-item{
@@ -272,6 +271,10 @@ font-size: 400%;
 #logo{
   text-align: center;
 }
+.text{
+  font-size: 30px;
+}
+
 .row{display: none;}
 .row2{
   display: flex;
@@ -292,6 +295,19 @@ font-size: 400%;
 .caption2 a{
   color: rgb(136, 135, 135);
 }
+/* footer for larger screens */
+.footer{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.footer{
+  font-family: 'Roboto400', sans-serif;
+  }   
+}
+@media screen and (min-width: 1024px){
+  #logoPic{
+    width: 50%;
+  }
 }
 
 

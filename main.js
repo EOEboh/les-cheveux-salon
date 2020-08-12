@@ -44,15 +44,15 @@ function showSlides(){
 // Initialize and add the map
 function initMap() {
     
-    var lagos = {lat: 6.489252, lng:3.358009};
+    let lagos = {lat: 6.489252, lng:3.358009};
     
-    var map = new google.maps.Map(
+    let map = new google.maps.Map(
         document.getElementById('map'), {zoom: 18, center: lagos});
 
-    var marker = new google.maps.Marker({position: uluru, map: map});
+    let marker = new google.maps.Marker({position: uluru, map: map});
   }
 
-//   generating the random code
+//   generating the random code in specials page
   function newCode(){
     let theCode = [1224, 5673, 0342,2373,7373,7436,2434, 4536, 5462];
       let randomCode = Math.floor(Math.random() * (theCode.length))

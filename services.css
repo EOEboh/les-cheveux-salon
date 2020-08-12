@@ -181,5 +181,66 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;}
 }
 p{font-family:'Roboto', sans-serif;}
 
+/* For larger screens > 770px*/
+@media screen and (min-width:770px){
+    .sidenav{
+      display: inline;
+      position: relative;
+      
+    }
+    .sidenav a{
+      display: block;
+      float: left;
+      color: black;
+      
+    }
+    .sidenav a:hover{
+      background-color: black;
+      font-size: 100%;
+    }
+    .sidenav .closeBtn{
+      position: relative;
+    }
+    .sidenav .closeBtn{
+      display: none;
+    }
+    #openBtn{
+      display: none;
+    }
+    
+  #logoPic{
+    width: 70%;
+  }
+  #logo{
+    text-align: center;
+  }
+  /* footer for larger screens */
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+  .footer{
+    font-family: 'Roboto400', sans-serif;
+    }   
+  }
+  @media screen and (min-width: 1024px){
+    #logoPic{
+      width: 50%;
+    }
+
+  }
+  @media screen and (min-width: 1024px){
+      .grid{
+          grid-template-columns: repeat(4, 2fr) ;
+          
+        }
+        .grid-item{
+            grid-column: span 2;
+        padding: 0.5rem;
+          
+      }
+      
+  }
+
 
 
